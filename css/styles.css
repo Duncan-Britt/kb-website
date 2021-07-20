@@ -1,0 +1,171 @@
+body {
+  background-color: #f3f3f3;
+  font-family: arial;
+  color: #111;
+  line-height: 1.3em;
+}
+
+header h1 {
+  margin: 30px 0 30px 0;
+  text-align: center;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.btn-toggle-nav {
+  display: none;
+}
+
+nav ul {
+  margin: 0 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav ul li {
+  flex-basis: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #204e73;
+}
+
+nav ul li a:hover {
+  color: #457fad;
+}
+
+.flex-container {
+  margin: 40px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about {
+  flex-basis: 50%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 2.5em;
+  font-weight: normal;
+  color: #316691;
+}
+
+#headshot {
+  padding-left: 10px;
+  flex-basis: 30%;
+  min-width: 200px;
+}
+
+#headshot img {
+  width: 100%;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+p a {
+  text-decoration: underline;
+  color: #2b81c4;
+}
+
+p a:hover {
+  cursor: pointer;
+  color: #80a7c4;
+}
+
+.research p {
+  text-align: left;
+  line-height: 2.5em;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  header h1 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 30px;
+  }
+  .flex-container {
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about {
+    text-align: center;
+  }
+  #headshot img {
+    display: block;
+    width: 60%;
+    margin: 20px auto;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .btn-toggle-nav {
+    height: 40px;
+    width: 40px;
+    display: block;
+    background-image: url('../img/menu.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 1000;
+    width: 40px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+
+  }
+
+  .nav-sidebar {
+    display: block;
+    position: fixed;
+    top: 80px;
+    right: 0px;
+    background-color: #111;
+    padding-top: 20px;
+    z-index: 1000;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    width: 0px;
+  }
+
+  .nav-sidebar ul {
+    padding-top: 15px;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  .nav-sidebar ul li {
+    list-style: none;
+    text-align: right;
+  }
+
+  .nav-sidebar ul li a {
+    color: #f3f3f3;
+    text-decoration: none;
+    line-height: 3.5em;
+    padding: 10px 40px 10px 0;
+  }
+
+  .nav-sidebar ul li a:hover {
+    color: #888;
+  }
+
+}
