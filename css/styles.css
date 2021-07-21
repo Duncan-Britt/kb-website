@@ -47,6 +47,7 @@ nav ul li a:hover {
 
 .about {
   flex-basis: 50%;
+  line-height: 1.5em;
 }
 
 h2 {
@@ -85,7 +86,20 @@ p a:hover {
 
 .research p {
   text-align: left;
-  line-height: 2.5em;
+  line-height: 1.5em;
+}
+
+.past_work {
+  padding: 20px 0 10px 0;
+}
+
+.past_work_links a {
+  text-decoration: none;
+  color: #204e73;
+}
+
+.past_work_links a:hover {
+  color: #457fad;
 }
 
 .mobile-nav {
