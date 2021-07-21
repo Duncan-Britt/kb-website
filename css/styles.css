@@ -58,8 +58,9 @@ h2 {
 }
 
 #headshot {
+  padding-top: 50px;
   padding-left: 10px;
-  flex-basis: 30%;
+  flex-basis: 38%;
   min-width: 200px;
 }
 
